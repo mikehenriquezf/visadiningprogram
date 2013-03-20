@@ -37,7 +37,6 @@ $(document).ready(function () {
     	var selectedIndex = $(this).index();
     	var scrollPosition = (selectedIndex * galleryWidth) / galleryItems;
 
-    	console.log(galleryWidth);
     	$('#galleryUl').animate({marginLeft: "-" + scrollPosition}, 600, function (){
     		// $('#galleryUl li:first').appendTo($('#galleryUl'));
     		// $('#galleryUl li:first').before($('#galleryUl li:last'));
@@ -105,7 +104,6 @@ $(document).ready(function () {
 		}else{
 			
 			currentPos = (currPagination * 532) - 9;
-			console.log(currentPos);
 			$('#thumbs ul').animate({marginLeft: "-" + currentPos}, 600);
 		}
 		currPagination++;
@@ -114,13 +112,11 @@ $(document).ready(function () {
 
 	$('.rotatorLeft').click(function () {
 		if(rotatorIndex-1 == 0){
-			console.log(rotatorIndex);
 			return false;
 		}else{
 			rotatorIndex--;
 			position = (rotatorIndex * 190) - 190;
 			$('#rotatorIndex').html(rotatorIndex + "/" + $rotatorItems);
-			console.log(rotatorIndex);
 			$('#rotator ul').animate({marginLeft: "-" + position}, 600);
 		}
 	});
