@@ -149,20 +149,31 @@ $(document).ready(function () {
 	    this.initEvents();
 	}
 	
+	var dropdownStatus = false;
+	
 	DropDown.prototype = {
 	    initEvents : function() {
 	        var obj = this;
 	 
 	        obj.dd.on('click', function(event){
 	            $(this).toggleClass('active');
+	            if(!dropdownStatus){
+		            $('.dropdown').animate({opacity : 1, marginTop : '8px'}, 'fast');
+		            dropdownStatus = true;
+	            }else{
+	            	$('.dropdown').animate({opacity : 0, marginTop : '0px'}, 'fast');
+	            	dropdownStatus = false;
+	            }
 	            return false;
 	        });
+
+	        
 	 
 	        obj.opts.on('click',function(){
 	            var opt = $(this);
 	            obj.val = opt.text();
 	            obj.index = opt.index();
-	            obj.placeholder.text('Gender: ' + obj.val);
+	            obj.placeholder.text(obj.val);
 	        });
 	    },
 	    getValue : function() {
