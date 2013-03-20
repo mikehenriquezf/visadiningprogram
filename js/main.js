@@ -187,10 +187,31 @@ $(document).ready(function () {
 	$(function() {
 		var dd = new DropDown( $('#dd') );
 		$(document).click(function() {
-			// all dropdowns
 			$('.wrapper-dropdown').removeClass('active');
+			$('.dropdown').animate({opacity : 0, marginTop : '0px'}, 'fast');
+			dropdownStatus = false;
 		});
+	});
 
+	$('.blankSpot').mouseover(function (){
+		var $restaurant = $(this).parent().find('.restauranteInfo');
+		$restaurant.animate({'background-color':'#faa632', 'color':'#fff'}, 'fast');
+		$(this).parent().find('.restname').animate({'color' : '#fff'}, 'fast');
+		$restaurant.find('.tipocomida').css({'background' : 'url("img/icons_listado_white.png") no-repeat left center', 'background-position-y': '8px'});
+		$restaurant.find('.lugarcomida').css({'background' : 'url("img/icons_listado_white.png") no-repeat left center', 'background-position-y': '-18px'});
+		$(this).parent().find('img').before('<div class="overlay">ver detalles</div>');
+		$(this).parent().find('.overlay').animate({opacity : .8}, 'fast');
+	});
+
+	$('.blankSpot').mouseout(function (){
+		var $restaurant = $(this).parent().find('.restauranteInfo');
+		$restaurant.animate({'background-color':'#fefbfb', 'color':'#474747'}, 'fast');
+		$(this).parent().find('.restname').animate({'color' : '#00229f'}, 'fast');
+		$restaurant.find('.tipocomida').css({'background' : 'url("img/icons_listado_orange.png") no-repeat left center', 'background-position-y': '8px'});
+		$restaurant.find('.lugarcomida').css({'background' : 'url("img/icons_listado_orange.png") no-repeat left center', 'background-position-y': '-18px'});
+		$(this).parent().find('.overlay').animate({opacity : 0}, 'fast', function(){
+			$(this).parent().find('.overlay').remove();	
+		});
 	});
 
 });
