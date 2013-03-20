@@ -9,7 +9,7 @@ a { color: #0022a0; text-decoration: none; }
 .desaturate img { filter: grayscale(100%); -webkit-filter: grayscale(100%); -moz-filter: grayscale(100%); -ms-filter: grayscale(100%); -o-filter: grayscale(100%); filter: url(../desaturate.svg#greyscale); }
 .overlayRight  { position:absolute; z-index: 999; left: 700px; display: inline-block; background-color: #000; width: 1700px; height: 499px; opacity: 0.85; filter: alpha(opacity=85); -moz-opacity:0.85; }
 .overlayLeft  { position:absolute; z-index: 999; left: -1700px; display: inline-block; background-color: #000; width: 1700px; height: 499px; opacity: 0.80; filter: alpha(opacity=80); -moz-opacity:0.8; }
-.overlay { box-sizing: border-box; padding-top: 60px; padding-left: 60px; background: #000; color: #dfdfdf; font-size: 16px; width: 215px; height: 140px; opacity: 0; position: absolute; border-radius: 0px 0px 6px 6px;  -moz-border-radius: 0px 0px 6px 6px;  -webkit-border-radius: 0px 0px 6px 6px; }
+.overlay { box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; padding-top: 60px; padding-left: 60px; background: #000; color: #dfdfdf; font-size: 16px; width: 215px; height: 140px; opacity: 0; position: absolute; border-radius: 0px 0px 6px 6px;  -moz-border-radius: 0px 0px 6px 6px;  -webkit-border-radius: 0px 0px 6px 6px; }
 .blankSpot { width: 215px; height: 229px; position: absolute; display: block; z-index: 99; cursor: pointer; }
 
 /*STYLES PARA HEADER, MENU Y SOCIAL MEDIA*/
@@ -152,8 +152,8 @@ div .backshadow:last-child { background: none; width: 308px; }
 .restaurante { overflow: hidden; display: block; width: 215px; height: 229px; float: left; margin: 8px; border-radius: 6px 6px 6px 6px;  -moz-border-radius: 6px 6px 6px 6px;  -webkit-border-radius: 6px 6px 6px 6px; }
 .restauranteInfo { height: 89px; background: #fefbfb; color: #474747; }
 .restauranteHover { background: #faa632; color: #fff; }
-.tipocomida { background: url('../img/icons_listado_orange.png') no-repeat left center; height: 30px; background-position-y: 8px; padding-left: 40px; padding-top: 9px; box-sizing: border-box; margin-left: 10px; }
-.lugarcomida { background: url('../img/icons_listado_orange.png') no-repeat left center; height: 28px; background-position-y: -18px; padding-left: 40px; padding-top: 3px; box-sizing: border-box; margin-left: 10px; }
+.tipocomida { background: url('../img/icons_listado_orange.png') no-repeat left center; height: 30px; background-position: 0 8px; padding-left: 40px; padding-top: 9px; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; margin-left: 10px; }
+.lugarcomida { background: url('../img/icons_listado_orange.png') no-repeat left center; height: 28px; background-position: 0 -18px; padding-left: 40px; padding-top: 3px; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; margin-left: 10px; }
 .restname { font-weight: bold; font-size: 16px; color: #00229f; margin-left: 10px; padding-top: 5px; }
 
 
