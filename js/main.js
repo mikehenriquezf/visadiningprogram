@@ -20,10 +20,6 @@ $(document).ready(function () {
     //Variables para index rotator
 
 
-
-	// $('#galleryUl li:first').before($('#galleryUl li:last'));
-	// $('#galleryUl').css({'left' : left_value});
-
 	$('#galleryUl').css('width', galleryWidth);
 	$('#rotator ul').css('width', $rotatorWidth);
 	$('#thumbs ul').css('width', $thumbs);
@@ -38,10 +34,7 @@ $(document).ready(function () {
     	var scrollPosition = (selectedIndex * galleryWidth) / galleryItems;
 
     	$('#galleryUl').animate({marginLeft: "-" + scrollPosition}, 600, function (){
-    		// $('#galleryUl li:first').appendTo($('#galleryUl'));
-    		// $('#galleryUl li:first').before($('#galleryUl li:last'));
     		$galleryLIs.addClass('desaturate');
-	       	// $(this).removeClass('desaturate', {duration:500});
 	        $galleryLIs.eq(selectedIndex).switchClass('desaturate', 1500);
 
     	});
