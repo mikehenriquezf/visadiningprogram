@@ -1,4 +1,6 @@
 $(document).ready(function () {
+	
+
 	var $gallery = $('#galleryUl');
 	var listWidth = $('#galleryUl li').outerWidth();
 	var galleryItems = $('#galleryUl li').length;
