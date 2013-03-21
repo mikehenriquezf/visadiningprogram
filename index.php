@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<html class="no-js">
 <!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
 <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
 <!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
@@ -20,7 +21,38 @@
 	<script src="js/main.js"></script>
 </head>
 <body class="body-noise">
+<!--[if IE]>
+<script type="text/javascript" 
+ src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js"></script>
 
+<style>
+ .chromeFrameInstallDefaultStyle {
+   width: 800px; /* default is 800px */
+   height: 700px;
+   border: 5px solid blue;
+   position:absolute;
+   z-index:9999;
+   margin: 0 auto;
+   margin-left: -400px;
+   margin-top: -350px;
+ }
+</style>
+
+<div id="prompt">
+ <!-- if IE without GCF, prompt goes here -->
+</div>
+
+<script>
+ // The conditional ensures that this code will only execute in IE,
+ // Therefore we can use the IE-specific attachEvent without worry
+ window.attachEvent("onload", function() {
+   CFInstall.check({
+     mode: "inline", // the default
+     node: "prompt"
+   });
+ });
+</script>
+<![endif]-->
 	<!-- HEADER -->
 	<?php require('inc/header_inc.php'); ?>
 	<!-- HEADER -->
