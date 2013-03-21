@@ -25,6 +25,7 @@ nav { width: 638px; height: 20px; float: left; margin-top: 27px; margin-left: 20
 #menu_list li a:hover { text-decoration: none; color: #fff; background: #faa632;  -moz-border-radius: 6px; -webkit-border-radius: 6px; border-radius: 6px; }
 .active_menu a{ color: #fff; background: #faa632; -moz-border-radius: 6px; -webkit-border-radius: 6px; border-radius: 6px; }
 
+
 #socials { float: left; width: 151px; position: relative; margin-left: 600px; margin-top: -37px; font-size: 11px; color: #464646; font-weight: bold; }
 #thesocials ul { list-style-type: none; margin: 0; padding: 0; }
 #thesocials li { list-style: none; float: left; padding-left: 5px; }
