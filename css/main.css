@@ -157,7 +157,9 @@ div .backshadow:last-child { background: none; width: 308px; }
 .restname { font-weight: bold; font-size: 16px; color: #00229f; margin-left: 10px; padding-top: 5px; }
 
 
+/*STYLES COMO FUNCIONA Y SOBRE NOSOTROS*/
 
+#comofunciona { background: #fff; position: relative; height: 100%; min-height: 750px; }
 /*STYLES PARA FOOTER*/
 
 footer { position:relative; border-top: #bfbfbf 1px solid; background: #fff;  padding-bottom: 50px; }
