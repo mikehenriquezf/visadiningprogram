@@ -45,7 +45,7 @@
 						<img src="img/visaapp_icon.png"/>
 					</div>
 					<div class="cta">
-						Descarga Vissa App y obten mas control de<br> tu tarjeta. <br><br>
+						Descarga Visa App y obten mas control de<br> tu tarjeta. <br><br>
 						<span class="cta_boton"><a href="#">Solicita tu tarjeta Visa</a></span>
 					</div>
 					<div class="reset"></div>
