@@ -1,7 +1,7 @@
 /*IMPORTANTES Y REUSABLES*/
 
 html, body { font-family: Helvetica; }
-#home_main:before, footer:before, body:before, #ctas:before, #notafinal:before, .square:before, #listado:before { opacity: 0.30; -moz-opacity:0.3; filter: alpha(opacity=30); }
+#home_main:before, footer:before, body:before, #ctas:before, #notafinal:before, .square:before, #listado:before, #comofunciona:before { opacity: 0.30; -moz-opacity:0.3; filter: alpha(opacity=30); }
 .reset { clear: both; }
 * { margin: 0; padding: 0; }
 a { color: #0022a0; text-decoration: none; }
