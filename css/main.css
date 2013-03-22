@@ -13,7 +13,7 @@ a { color: #0022a0; text-decoration: none; }
 .blankSpot { width: 215px; height: 229px; position: absolute; display: block; z-index: 99; cursor: pointer; }
 
 /*STYLES PARA HEADER, MENU Y SOCIAL MEDIA*/
-header { display: block; position: relative; width: 100%; height: 78px; background: #fcfbfa; -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2); -moz-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2); box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2); z-index: 999; }
+header { display: block; position: fixed; top: 0px; width: 100%; height: 78px; background: #fcfbfa; -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2); -moz-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2); box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2); z-index: 999; }
 #header_container { width: 960px; margin: 0 auto;  }
 #header_logo { width: 209px; height: 63px; float: left; margin-top: 10px; }
 #header_logo h1 a { text-indent: -99999px; display: block; background: url('../img/logo.png') no-repeat; width: 209px; height: 63px; }
@@ -36,7 +36,7 @@ nav { width: 638px; height: 20px; float: left; margin-top: 27px; margin-left: 20
 
 /*STYLES PARA CONTENIDO DEL HOME*/
 
-#home_main { background: #fff; position: relative; height: 100%; min-height: 750px }
+#home_main { background: #fff; position: relative; height: 100%; min-height: 750px; margin-top: 100px; }
 #home_main h2 { font-size: 21px; color: #666; margin-top: 25px; font-weight: 200; }
 .opcion1 h3, .opcion2 h3, .opcion3 h3, .opcion4 h3 { font-size: 18px; color: #002b9d; margin-top: 320px; }
 .opcion5 h3 { font-size: 18px; color: #002b9d; margin-top: 16px; }
@@ -72,7 +72,7 @@ div .backshadow:last-child { background: none; width: 308px; }
 
 
 /*STYLES PARA CONTENIDO NOTA FINAL*/
-#notafinal { background: #fff; position: relative; height: 100%; min-height: 750px; overflow: hidden; }
+#notafinal { background: #fff; position: relative; height: 100%; min-height: 750px; overflow: hidden; margin-top: 78px; }
 #notafinal h2 { font-size: 36px; color: #474747; font-weight: bold; margin-top: 25px; font-weight: 200; }
 #notafinal h3 { font-size: 18px; color: #002b9d; margin-top: 320px; }
 #notafinal h4, #direccion h4 { font-size: 18px; color: #002b9d;  }
@@ -137,7 +137,7 @@ div .backshadow:last-child { background: none; width: 308px; }
 
 /*STYLES LISTADO DE RESTAURANTES*/
 
-#listado { background: #fff; position: relative; height: 100%; min-height: 750px; }
+#listado { background: #fff; position: relative; height: 100%; min-height: 750px; margin-top: 90px; }
 #listado h2 { font-size: 21px; color: #666; margin-top: 25px; position: absolute; font-weight: 200; }
 #listadoContainer { margin: 0 auto 0 auto; width: 960px; padding: 0; min-height: 1325px; }
 .wrapper-dropdown { position: absolute; z-index: 9999; border-radius: 8px;  -moz-border-radius: 8px;  -webkit-border-radius: 8px; width: 200px; padding: 10px; margin: 22px 700px; background: #faa632; color: #fff; outline: none; cursor: pointer; font-weight: bold; }
@@ -160,7 +160,7 @@ div .backshadow:last-child { background: none; width: 308px; }
 
 /*STYLES COMO FUNCIONA Y SOBRE NOSOTROS*/
 
-#comofunciona { background: #fff; position: relative; height: 100%; min-height: 750px; }
+#comofunciona { background: #fff; position: relative; height: 100%; min-height: 750px; margin-top: 90px; }
 #comofunciona h2 { font-size: 21px; color: #666; margin-top: 25px; position: absolute; font-weight: 200; }
 #comofuncionaContainer { margin: 0 auto 0 auto; width: 950px; padding: 0; /*min-height: 1325px;*/ }
 #comofuncionaContainer p { position: absolute; margin-top: 60px; font-size: 13px; color: #474747; width: 660px; }
