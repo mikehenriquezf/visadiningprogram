@@ -216,4 +216,8 @@ $(document).ready(function () {
 		});
 	});
 
+	$('.blankSpot').click(function (){
+		location.href = 'notafinal.php';
+	});	
+
 });
