@@ -7,11 +7,11 @@
 			</div>
 			<nav>
 				<ul id="menu_list">
-					<li class="active_menu"><a href="">Inicio</a></li>
-					<li class="rounded6"><a href="">Restaurantes</a></li>
-					<li class="rounded6"><a href="">¿Como funciona?</a></li>
-					<li class="rounded6"><a href="">Sobre Nosotros</a></li>
-					<li class="rounded6"><a href="">Sal.pr</a></li>
+					<li class="active_menu"><a href="index.php">Inicio</a></li>
+					<li class="rounded6"><a href="listado.php">Restaurantes</a></li>
+					<li class="rounded6"><a href="comofunciona.php">¿Como funciona?</a></li>
+					<li class="rounded6"><a href="sobrenosotros.php">Sobre Nosotros</a></li>
+					<li class="rounded6"><a href="http://www.sal.pr">Sal.pr</a></li>
 				</ul>
 			</nav>
 			<div id="socials">
